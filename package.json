@@ -1,0 +1,22 @@
+{
+    "name": "brite-interview-project",
+    "version": "0.0.1",
+    "scripts": {
+        "launch:cy": "cypress open",
+        "test:nicolas": "cypress run --browser chrome --spec './cypress/tests/e2e/onlyNicolas.cy.ts' & cypress run --browser firefox --spec './cypress/tests/e2e/onlyNicolas.cy.ts' &",
+        "test:e2e": "cypress run --browser chrome --spec './cypress/tests/e2e/*'",
+        "test:api": "cypress run --spec './cypress/tests/api/*'"
+    },
+    "author": "TomaszO",
+    "devDependencies": {
+        "@types/node": "^20.14.0",
+        "@typescript-eslint/eslint-plugin": "^7.11.0",
+        "@typescript-eslint/parser": "^7.11.0",
+        "cypress": "^13.13.2",
+        "cypress-xpath": "^2.0.1",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.3.0",
+        "typescript": "^5.4.5"
+    }
+}
